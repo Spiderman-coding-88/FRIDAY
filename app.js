@@ -525,7 +525,7 @@ function speak(text) {
 
                 speak("I'm sorry. I don't love you");
 
-                window.open("https://sad%20songs");
+                window.open("https://sad songs");
             }
 
             /* FALLBACK */
