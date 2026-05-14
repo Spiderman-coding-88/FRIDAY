@@ -239,7 +239,7 @@ function processCommand(command) {
 
         speak("I'm sorry. I don't love you");
 
-        window.open("https://sad%20songs");
+        window.open("https://sad songs");
     }
 
     /* AI CHAT */
