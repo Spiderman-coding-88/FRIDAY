@@ -231,6 +231,17 @@ function processCommand(command) {
         );
     }
 
+    /* I LOVE YOU */
+
+    else if(command.includes("i love you")) {
+
+        // successSound.play();
+
+        speak("I'm sorry. I don't love you");
+
+        window.open("https://sad%20songs");
+    }
+
     /* AI CHAT */
 
     else {
