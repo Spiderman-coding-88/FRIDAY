@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>F.R.I.D.A.Y</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- THREE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- PARTICLES -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+
+        <h1>F.R.I.D.A.Y</h1>
+
+        <p>INITIALIZING SYSTEMS...</p>
+
+    </div>
+
+    <!-- PARTICLES -->
+    <div id="particles-js"></div>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- RADAR -->
+    <!-- <img
+        src="assets/images/radar.png"
+        class="radar-overlay"
+    > -->
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            F.R.I.D.A.Y AI
+        </div>
+
+        <div class="top-status">
+
+            <div class="status-item">
+                <span>TIME</span>
+                <span id="clock">00:00:00</span>
+            </div>
+
+            <div class="status-item">
+                <span>BATTERY</span>
+                <span id="battery">100%</span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-container">
+
+        <!-- LEFT -->
+        <section class="left-panel glass">
+
+            <h2>SYSTEM STATUS</h2>
+
+            <div class="status-box">
+
+                <div class="status-left">
+
+                    <ion-icon
+                        name="hardware-chip-outline"
+                        class="status-icon">
+                    </ion-icon>
+
+                    <span>AI CORE</span>
+
+                </div>
+
+                <span id="ai-status">
+                    ONLINE
+                </span>
+
+            </div>
+
+            <div class="status-box">
+
+                <div class="status-left">
+
+                    <ion-icon
+                        name="mic-outline"
+                        class="status-icon">
+                    </ion-icon>
+
+                    <span>VOICE</span>
+
+                </div>
+
+                <span id="voice-status">
+                    READY
+                </span>
+
+            </div>
+
+            <div class="status-box">
+
+                <div class="status-left">
+
+                    <ion-icon
+                        name="speedometer-outline"
+                        class="status-icon">
+                    </ion-icon>
+
+                    <span>CPU</span>
+
+                </div>
+
+                <span id="cpu">22%</span>
+
+            </div>
+
+            <div class="status-box">
+
+                <div class="status-left">
+
+                    <ion-icon
+                        name="battery-half-outline"
+                        class="status-icon">
+                    </ion-icon>
+
+                    <span>BATTERY</span>
+
+                </div>
+
+                <span id="battery-side">
+                    100%
+                </span>
+
+            </div>
+
+            <div class="status-box">
+
+                <div class="status-left">
+
+                    <ion-icon
+                        name="thunderstorm-outline"
+                        class="status-icon">
+                    </ion-icon>
+
+                    <span>WEATHER</span>
+
+                </div>
+
+                <span id="weather-side">
+                    CLEAR
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- CENTER -->
+        <section class="center-panel">
+
+            <div class="core-wrapper">
+
+                <div class="ring ring1"></div>
+                <div class="ring ring2"></div>
+                <div class="ring ring3"></div>
+
+                <div class="core"></div>
+
+            </div>
+
+            <h1 class="assistant-name">
+                F.R.I.D.A.Y
+            </h1>
+
+            <button id="listenBtn">
+                ACTIVATE AI
+            </button>
+
+            <!-- WAVE -->
+            <div id="waveform">
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT -->
+        <section class="right-panel glass">
+
+            <h2>LIVE CONSOLE</h2>
+
+            <div id="console"></div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- <footer class="bottom-panel glass">
+
+        <div class="card">
+
+            <h3>WEATHER</h3>
+
+            <p id="weather">
+                Loading...
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>LOCATION</h3>
+
+            <p id="location">
+                Unknown
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>MODE</h3>
+
+            <p>
+                ASSISTANCE ACTIVE
+            </p>
+
+        </div>
+
+    </footer> -->
+
+    <footer class="bottom-panel glass">
+
+        <div class="card">
+
+            <h3>MODE</h3>
+
+            <p>
+                ASSISTANCE ACTIVE
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>AI STATUS</h3>
+
+            <p>
+                ONLINE
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>SECURITY</h3>
+
+            <p>
+                PROTECTED
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="particles.js"></script>
+    <script src="commands.js"></script>
+    <script src="weather.js"></script>
+    <script src="animations.js"></script>
+    <script src="ai.js"></script>
+    <script src="app.js"></script>
+
+    <script type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+
+    <script nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+    </script>
+
+</body>
+
+</html>

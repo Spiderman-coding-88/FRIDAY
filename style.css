@@ -1,0 +1,1402 @@
+/*
+========================================
+F.R.I.D.A.Y STYLE UPGRADE 😈⚡
+RED • BLACK • WHITE
+========================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+========================================
+BODY
+========================================
+*/
+
+body {
+
+    background:
+        radial-gradient(
+            circle at center,
+            #190000 0%,
+            #070707 55%,
+            #000000 100%
+        );
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+
+    height: 100vh;
+}
+
+/*
+========================================
+PARTICLES
+========================================
+*/
+
+#particles-js {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -3;
+}
+
+/*
+========================================
+OVERLAY
+========================================
+*/
+
+.overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(255,0,0,0.03),
+            rgba(0,0,0,0.5)
+        );
+
+    z-index: -2;
+}
+
+/*
+========================================
+HEADER
+========================================
+*/
+
+header {
+
+    height: 90px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 50px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.08);
+
+    background:
+        rgba(0,0,0,0.2);
+
+    backdrop-filter: blur(10px);
+}
+
+/*
+========================================
+LOGO
+========================================
+*/
+
+.logo {
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    letter-spacing: 8px;
+
+    color: #ff2b2b;
+
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000;
+}
+
+/*
+========================================
+TOP STATUS
+========================================
+*/
+
+.top-status {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+.status-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: right;
+
+    font-size: 13px;
+
+    color: #ffffff;
+}
+
+.status-item span {
+
+    color: #ff4d4d;
+}
+
+/*
+========================================
+MAIN
+========================================
+*/
+
+.main-container {
+
+    width: 100%;
+
+    height: calc(100vh - 210px);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+}
+
+/*
+========================================
+GLASS EFFECT
+========================================
+*/
+
+.glass {
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border:
+        1px solid rgba(255,0,0,0.15);
+
+    backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 0 25px rgba(255,0,0,0.15);
+
+    transition: 0.3s ease;
+}
+
+.glass:hover {
+
+    box-shadow:
+        0 0 35px rgba(255,0,0,0.25);
+}
+
+/*
+========================================
+SIDE PANELS
+========================================
+*/
+
+.left-panel,
+.right-panel {
+
+    width: 320px;
+
+    height: 540px;
+
+    border-radius: 24px;
+
+    padding: 25px;
+}
+
+.left-panel h2,
+.right-panel h2 {
+
+    margin-bottom: 25px;
+
+    letter-spacing: 3px;
+
+    color: #ff3d3d;
+}
+
+/*
+========================================
+STATUS BOX
+========================================
+*/
+
+.status-box {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    margin-bottom: 16px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,0,0,0.15);
+
+    color: white;
+}
+
+.status-box:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 15px rgba(255,0,0,0.2);
+}
+
+/*
+========================================
+CENTER PANEL
+========================================
+*/
+
+.center-panel {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/*
+========================================
+CORE WRAPPER
+========================================
+*/
+
+.core-wrapper {
+
+    position: relative;
+
+    width: 420px;
+    height: 420px;
+}
+
+/*
+========================================
+AI CORE
+========================================
+*/
+
+.core {
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    background:
+        radial-gradient(
+            circle,
+            #ff4444,
+            #8b0000,
+            #220000
+        );
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    box-shadow:
+        0 0 30px #ff0000,
+        0 0 60px #ff0000,
+        0 0 120px rgba(255,0,0,0.8);
+
+    animation:
+        pulse 2s infinite ease-in-out,
+        flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+
+    from {
+
+        filter: brightness(1);
+    }
+
+    to {
+
+        filter: brightness(1.3);
+    }
+}
+
+/*
+========================================
+RINGS
+========================================
+*/
+
+.ring {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border:
+        2px solid rgba(255,0,0,0.4);
+
+    box-shadow:
+        0 0 15px rgba(255,0,0,0.3);
+}
+
+.ring1 {
+
+    width: 420px;
+    height: 420px;
+
+    animation:
+        spin 16s linear infinite;
+}
+
+.ring2 {
+
+    width: 320px;
+    height: 320px;
+
+    top: 50px;
+    left: 50px;
+
+    animation:
+        spinReverse 10s linear infinite;
+}
+
+.ring3 {
+
+    width: 220px;
+    height: 220px;
+
+    top: 100px;
+    left: 100px;
+
+    animation:
+        spin 5s linear infinite;
+}
+
+/*
+========================================
+ANIMATIONS
+========================================
+*/
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.15);
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+}
+
+/*
+========================================
+ASSISTANT NAME
+========================================
+*/
+
+.assistant-name {
+
+    margin-top: 35px;
+
+    font-size: 52px;
+
+    letter-spacing: 16px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,0.4);
+}
+
+/*
+========================================
+BUTTON
+========================================
+*/
+
+#listenBtn {
+
+    margin-top: 35px;
+
+    padding: 18px 55px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #ff0000,
+            #7a0000
+        );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 0 25px rgba(255,0,0,0.5);
+}
+
+#listenBtn:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 40px rgba(255,0,0,0.9);
+}
+
+/*
+========================================
+WAVEFORM
+========================================
+*/
+
+#waveform {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 6px;
+
+    height: 60px;
+
+    margin-top: 35px;
+}
+
+#waveform div {
+
+    width: 7px;
+
+    background: #ff2d2d;
+
+    border-radius: 10px;
+
+    animation:
+        wave 1s infinite ease-in-out;
+
+    box-shadow:
+        0 0 12px #ff0000;
+}
+
+#waveform div:nth-child(1) {
+    height: 10px;
+}
+
+#waveform div:nth-child(2) {
+    height: 20px;
+}
+
+#waveform div:nth-child(3) {
+    height: 40px;
+}
+
+#waveform div:nth-child(4) {
+    height: 65px;
+}
+
+#waveform div:nth-child(5) {
+    height: 40px;
+}
+
+#waveform div:nth-child(6) {
+    height: 20px;
+}
+
+#waveform div:nth-child(7) {
+    height: 10px;
+}
+
+@keyframes wave {
+
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/*
+========================================
+CONSOLE
+========================================
+*/
+
+#console {
+
+    height: 440px;
+
+    overflow-y: auto;
+
+    font-size: 14px;
+
+    padding-right: 10px;
+
+    font-family: monospace;
+}
+
+.console-line {
+
+    margin-bottom: 14px;
+
+    color: #ff5555;
+
+    text-shadow:
+        0 0 8px rgba(255,0,0,0.5);
+}
+
+/*
+========================================
+BOTTOM PANEL
+========================================
+*/
+
+.bottom-panel {
+
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 92%;
+
+    height: 110px;
+
+    border-radius: 24px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.card {
+
+    text-align: center;
+
+    color: white;
+}
+
+.card h3 {
+
+    margin-bottom: 10px;
+
+    color: #ff3d3d;
+}
+
+/*
+========================================
+LOADER
+========================================
+*/
+
+#loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle,
+            #120000,
+            #000000
+        );
+
+    z-index: 9999;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    color: #ff2b2b;
+
+    letter-spacing: 5px;
+}
+
+#loader h1 {
+
+    font-size: 70px;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 20px #ff0000;
+}
+
+/*
+========================================
+RADAR OVERLAY
+========================================
+*/
+
+.radar-overlay {
+
+    position: absolute;
+
+    width: 800px;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    opacity: 0.06;
+
+    animation:
+        spin 35s linear infinite;
+
+    pointer-events: none;
+}
+
+/*
+========================================
+STATUS LEFT
+========================================
+*/
+
+.status-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+/*
+========================================
+ICONS
+========================================
+*/
+
+.status-icon {
+
+    font-size: 26px;
+
+    color: #ff2d2d;
+
+    filter:
+        drop-shadow(
+            0 0 10px #ff0000
+        );
+
+    animation:
+        iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+
+    0% {
+
+        transform: scale(1);
+
+        opacity: 0.8;
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: scale(1);
+
+        opacity: 0.8;
+    }
+}
+
+ion-icon {
+
+    color: #ff2d2d;
+
+    filter:
+        drop-shadow(0 0 12px #ff0000);
+
+    transition: 0.3s ease;
+}
+
+/*
+========================================
+RESPONSIVE DESIGN 😈⚡
+========================================
+*/
+
+/*
+========================================
+TABLETS
+========================================
+*/
+
+@media screen and (max-width: 1200px) {
+
+    .main-container {
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        gap: 30px;
+
+        height: auto;
+
+        padding-bottom: 200px;
+
+        overflow-y: auto;
+    }
+
+    .left-panel,
+    .right-panel {
+
+        width: 90%;
+
+        height: auto;
+    }
+
+    .core-wrapper {
+
+        width: 320px;
+        height: 320px;
+    }
+
+    .ring1 {
+
+        width: 320px;
+        height: 320px;
+    }
+
+    .ring2 {
+
+        width: 240px;
+        height: 240px;
+
+        top: 40px;
+        left: 40px;
+    }
+
+    .ring3 {
+
+        width: 160px;
+        height: 160px;
+
+        top: 80px;
+        left: 80px;
+    }
+
+    .assistant-name {
+
+        font-size: 38px;
+
+        letter-spacing: 10px;
+    }
+}
+
+/*
+========================================
+MOBILE DEVICES
+========================================
+*/
+
+@media screen and (max-width: 768px) {
+
+    body {
+
+        overflow-y: auto;
+    }
+
+    header {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        height: auto;
+
+        padding: 20px;
+    }
+
+    .logo {
+
+        font-size: 26px;
+
+        letter-spacing: 5px;
+
+        text-align: center;
+    }
+
+    .top-status {
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .main-container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        padding: 20px;
+
+        gap: 25px;
+
+        height: auto;
+    }
+
+    .left-panel,
+    .right-panel {
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+    }
+
+    .center-panel {
+
+        width: 100%;
+    }
+
+    /*
+    ========================================
+    CORE
+    ========================================
+    */
+
+    .core-wrapper {
+
+        width: 260px;
+        height: 260px;
+    }
+
+    .core {
+
+        width: 100px;
+        height: 100px;
+    }
+
+    .ring1 {
+
+        width: 260px;
+        height: 260px;
+    }
+
+    .ring2 {
+
+        width: 190px;
+        height: 190px;
+
+        top: 35px;
+        left: 35px;
+    }
+
+    .ring3 {
+
+        width: 120px;
+        height: 120px;
+
+        top: 70px;
+        left: 70px;
+    }
+
+    /*
+    ========================================
+    TEXT
+    ========================================
+    */
+
+    .assistant-name {
+
+        font-size: 28px;
+
+        letter-spacing: 6px;
+
+        text-align: center;
+    }
+
+    /*
+    ========================================
+    BUTTON
+    ========================================
+    */
+
+    #listenBtn {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        font-size: 16px;
+
+        padding: 16px 20px;
+    }
+
+    /*
+    ========================================
+    WAVEFORM
+    ========================================
+    */
+
+    #waveform {
+
+        transform: scale(0.8);
+    }
+
+    /*
+    ========================================
+    CONSOLE
+    ========================================
+    */
+
+    #console {
+
+        height: 260px;
+
+        font-size: 12px;
+    }
+
+    /*
+    ========================================
+    BOTTOM PANEL
+    ========================================
+    */
+
+    .bottom-panel {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        padding: 20px;
+
+        margin-top: 30px;
+
+        bottom: unset;
+
+        left: unset;
+
+        transform: none;
+    }
+
+    .card {
+
+        width: 45%;
+    }
+
+    /*
+    ========================================
+    LOADER
+    ========================================
+    */
+
+    #loader h1 {
+
+        font-size: 42px;
+    }
+
+    /*
+    ========================================
+    RADAR
+    ========================================
+    */
+
+    .radar-overlay {
+
+        width: 400px;
+    }
+}
+
+/*
+========================================
+SMALL PHONES 😈
+========================================
+*/
+
+@media screen and (max-width: 480px) {
+
+    .assistant-name {
+
+        font-size: 22px;
+
+        letter-spacing: 4px;
+    }
+
+    .logo {
+
+        font-size: 22px;
+    }
+
+    .status-item {
+
+        font-size: 11px;
+    }
+
+    .core-wrapper {
+
+        width: 220px;
+        height: 220px;
+    }
+
+    .ring1 {
+
+        width: 220px;
+        height: 220px;
+    }
+
+    .ring2 {
+
+        width: 160px;
+        height: 160px;
+
+        top: 30px;
+        left: 30px;
+    }
+
+    .ring3 {
+
+        width: 100px;
+        height: 100px;
+
+        top: 60px;
+        left: 60px;
+    }
+
+    .core {
+
+        width: 80px;
+        height: 80px;
+    }
+
+    #listenBtn {
+
+        font-size: 14px;
+    }
+
+    .card {
+
+        width: 100%;
+    }
+}
+
+/*
+========================================
+COMBAT MODE 😈⚡
+========================================
+*/
+
+body.combat-mode {
+
+    filter:
+        grayscale(1)
+        contrast(1.3)
+        brightness(0.85);
+
+    animation:
+        combatFlicker 0.15s infinite;
+}
+
+/*
+========================================
+COMBAT FLICKER
+========================================
+*/
+
+@keyframes combatFlicker {
+
+    0% {
+
+        opacity: 1;
+    }
+
+    25% {
+
+        opacity: 0.92;
+    }
+
+    50% {
+
+        opacity: 0.85;
+    }
+
+    75% {
+
+        opacity: 0.95;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+/*
+========================================
+COMBAT CORE
+========================================
+*/
+
+body.combat-mode .core {
+
+    background:
+        radial-gradient(
+            circle,
+            #ffffff,
+            #666666,
+            #111111
+        );
+
+    box-shadow:
+        0 0 20px white,
+        0 0 50px rgba(255,255,255,0.7);
+
+    animation:
+        combatPulse 0.5s infinite;
+}
+
+/*
+========================================
+COMBAT RINGS
+========================================
+*/
+
+body.combat-mode .ring {
+
+    border:
+        2px solid rgba(255,255,255,0.5);
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,0.5);
+}
+
+/*
+========================================
+COMBAT BUTTON
+========================================
+*/
+
+body.combat-mode #listenBtn {
+
+    background:
+        linear-gradient(
+            45deg,
+            #ffffff,
+            #444444
+        );
+
+    color: black;
+
+    box-shadow:
+        0 0 20px white;
+}
+
+/*
+========================================
+COMBAT TEXT
+========================================
+*/
+
+body.combat-mode .assistant-name,
+body.combat-mode .logo,
+body.combat-mode .console-line {
+
+    color: white;
+
+    text-shadow:
+        0 0 10px white;
+}
+
+/*
+========================================
+COMBAT ANIMATION
+========================================
+*/
+
+@keyframes combatPulse {
+
+    0% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+
+    5% {
+        transform: translate(320%, -180%) scale(0.4) rotate(45deg);
+    }
+
+    10% {
+        transform: translate(-450%, 260%) scale(1.8) rotate(-90deg);
+    }
+
+    15% {
+        transform: translate(180%, 420%) scale(0.3) rotate(130deg);
+    }
+
+    20% {
+        transform: translate(-520%, -340%) scale(2.2) rotate(-180deg);
+    }
+
+    25% {
+        transform: translate(600%, 120%) scale(0.6) rotate(260deg);
+    }
+
+    30% {
+        transform: translate(-280%, 500%) scale(1.5) rotate(-320deg);
+    }
+
+    35% {
+        transform: translate(450%, -520%) scale(0.2) rotate(400deg);
+    }
+
+    40% {
+        transform: translate(-650%, 80%) scale(2.5) rotate(-460deg);
+    }
+
+    45% {
+        transform: translate(120%, -620%) scale(0.5) rotate(520deg);
+    }
+
+    50% {
+        transform: translate(720%, 300%) scale(1.9) rotate(-600deg);
+    }
+
+    55% {
+        transform: translate(-800%, -180%) scale(0.1) rotate(720deg);
+    }
+
+    60% {
+        transform: translate(340%, 700%) scale(2.8) rotate(-820deg);
+    }
+
+    65% {
+        transform: translate(-920%, 420%) scale(0.7) rotate(930deg);
+    }
+
+    70% {
+        transform: translate(500%, -780%) scale(1.6) rotate(-1040deg);
+    }
+
+    75% {
+        transform: translate(-1100%, -500%) scale(0.25) rotate(1180deg);
+    }
+
+    80% {
+        transform: translate(820%, 920%) scale(3) rotate(-1320deg);
+    }
+
+    85% {
+        transform: translate(-600%, 1040%) scale(0.45) rotate(1460deg);
+    }
+
+    90% {
+        transform: translate(1300%, -260%) scale(2.2) rotate(-1620deg);
+    }
+
+    95% {
+        transform: translate(-1400%, -920%) scale(0.15) rotate(1800deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+}
