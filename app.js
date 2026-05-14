@@ -103,25 +103,7 @@ function speak(text) {
         ||
 
         voices.find(voice =>
-            voice.name.toLowerCase().includes("zira")
-        )
-
-        ||
-
-        voices.find(voice =>
             voice.name.toLowerCase().includes("female")
-        )
-
-        ||
-
-        voices.find(voice =>
-            voice.name.toLowerCase().includes("samantha")
-        )
-
-        ||
-
-        voices.find(voice =>
-            voice.name.toLowerCase().includes("victoria")
         );
 
         /*
